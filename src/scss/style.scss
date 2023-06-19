@@ -1,17 +1,45 @@
-$bgColor: #24292e;
-$text: #fff;
-
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+  font-family: 'TT Lakes-Bold';
+  src: url('../fonts/TTLakes-Bold.woff');
 }
 
-body {
-  padding: 1rem;
+@font-face {
+  font-family: 'TT Lakes-Medium';
+  src: url('../fonts/TTLakes-Medium.woff');
+}
+
+@font-face {
+  font-family: 'TT Lakes-Regular';
+  src: url('../fonts/TTLakes-Regular.woff');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+}
+body {
+  width: 100%;
+  max-width: 1440px;
+  overflow-x: hidden;
 }

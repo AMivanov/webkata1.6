@@ -1,0 +1,152 @@
+.site-menu__left {
+  visibility: hidden;
+  width: 320px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.site-menu__left-open {
+  visibility: visible;
+}
+
+.site-menu__left-header {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  margin-bottom: 26px;
+}
+
+.site-menu__left-cross {
+  margin-left: 24px;
+  margin-right: 17px;
+}
+
+.site-menu__left-search {
+  margin-right: 24px;
+  margin-left: auto;
+}
+
+.list__element:first-child {
+  color: #7e7e82;
+}
+
+.list__element {
+  margin-left: 24px;
+  list-style-type: none;
+  font-family: 'TT Lakes-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 24px;
+  color: #1b1c21;
+}
+
+.site-menu__left-highlight {
+  position: absolute;
+  top: 85px;
+  bottom: auto;
+}
+
+.site-footer__left {
+  bottom: 32px;
+}
+
+.site-footer__left-bottoms {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.site-footer__left-phone,
+.site-footer__left-chat,
+.site-footer__left-contacts {
+  margin-left: 24px;
+}
+
+.site-footer__left-mail {
+  font-family: 'TT Lakes-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  letter-spacing: -0.2px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
+
+.site-footer__left-number {
+  font-family: 'TT Lakes-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.site-footer__left-language {
+  display: flex;
+  font-size: 16px;
+  font-family: 'TT Lakes-Regular', sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  margin-left: 24px;
+}
+
+.site-footer__left-language-ru {
+  color: #7e7e82;
+  margin-right: 7px;
+}
+
+.site-footer__left-language-en {
+  margin-right: 7px;
+}
+
+@media (min-width: 768px) {
+  .list__element {
+    margin-bottom: 32px;
+  }
+
+  .list__element:last-child {
+    margin-bottom: 268px;
+  }
+
+  .site-menu__left-highlight {
+    top: 107px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-menu__left {
+    visibility: visible;
+  }
+
+  .list__element:last-child {
+    margin-bottom: 241px;
+  }
+
+  body {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .site-menu__left-header {
+    margin-top: 30px;
+    margin-bottom: 37px;
+  }
+
+  .site-menu__left-cross {
+    display: none;
+  }
+
+  .site-menu__left-group {
+    margin-left: 22px;
+  }
+
+  .site-menu__left-search {
+    margin-right: 29px;
+  }
+}
