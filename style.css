@@ -52,9 +52,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: hidden; }
-
-.animation {
+  visibility: hidden;
   transition: 1s; }
 
 .animation:hover {
@@ -137,6 +135,7 @@ body {
 .main__navigation {
   display: flex;
   overflow: hidden;
+  overflow-x: auto;
   align-items: center;
   padding-left: 16px; }
 
@@ -395,7 +394,7 @@ body {
     width: 421px;
     height: 60px; } }
 
-.site-menu__left {
+.side-menu__left {
   visibility: hidden;
   width: 320px;
   height: 100%;
@@ -405,20 +404,20 @@ body {
   left: 0;
   top: 0; }
 
-.site-menu__left-open {
+.side-menu__left-open {
   visibility: visible; }
 
-.site-menu__left-header {
+.side-menu__left-header {
   display: flex;
   align-items: center;
   margin-top: 19px;
   margin-bottom: 26px; }
 
-.site-menu__left-cross {
+.side-menu__left-cross {
   margin-left: 24px;
   margin-right: 17px; }
 
-.site-menu__left-search {
+.side-menu__left-search {
   margin-right: 24px;
   margin-left: auto; }
 
@@ -435,24 +434,24 @@ body {
   margin-bottom: 24px;
   color: #1b1c21; }
 
-.site-menu__left-highlight {
+.side-menu__left-highlight {
   position: absolute;
   top: 85px;
   bottom: auto; }
 
-.site-footer__left {
+.side-footer__left {
   bottom: 32px; }
 
-.site-footer__left-bottoms {
+.side-footer__left-bottoms {
   display: flex;
   margin-bottom: 16px; }
 
-.site-footer__left-phone,
-.site-footer__left-chat,
-.site-footer__left-contacts {
+.side-footer__left-phone,
+.side-footer__left-chat,
+.side-footer__left-contacts {
   margin-left: 24px; }
 
-.site-footer__left-mail {
+.side-footer__left-mail {
   font-family: 'TT Lakes-Regular', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -461,7 +460,7 @@ body {
   margin-left: 24px;
   margin-bottom: 12px; }
 
-.site-footer__left-number {
+.side-footer__left-number {
   font-family: 'TT Lakes-Bold', sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -470,7 +469,7 @@ body {
   margin-left: 24px;
   margin-bottom: 40px; }
 
-.site-footer__left-language {
+.side-footer__left-language {
   display: flex;
   font-size: 16px;
   font-family: 'TT Lakes-Regular', sans-serif;
@@ -479,11 +478,11 @@ body {
   color: #1b1c21;
   margin-left: 24px; }
 
-.site-footer__left-language-ru {
+.side-footer__left-language-ru {
   color: #7e7e82;
   margin-right: 7px; }
 
-.site-footer__left-language-en {
+.side-footer__left-language-en {
   margin-right: 7px; }
 
 @media (min-width: 768px) {
@@ -491,25 +490,25 @@ body {
     margin-bottom: 32px; }
   .list__element:last-child {
     margin-bottom: 268px; }
-  .site-menu__left-highlight {
+  .side-menu__left-highlight {
     top: 107px; } }
 
 @media (min-width: 1440px) {
-  .site-menu__left {
+  .side-menu__left {
     visibility: visible; }
   .list__element:last-child {
     margin-bottom: 241px; }
   body {
     margin-right: 0;
     margin-left: auto; }
-  .site-menu__left-header {
+  .side-menu__left-header {
     margin-top: 30px;
     margin-bottom: 37px; }
-  .site-menu__left-cross {
+  .side-menu__left-cross {
     display: none; }
-  .site-menu__left-group {
+  .side-menu__left-group {
     margin-left: 22px; }
-  .site-menu__left-search {
+  .side-menu__left-search {
     margin-right: 29px; } }
 
 .main__divider-brand {
@@ -851,7 +850,8 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 5; }
+  z-index: 5;
+  transition: 1s; }
 
 .feedback-menu__open {
   visibility: visible; }
@@ -928,7 +928,8 @@ aside > span {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 5; }
+  z-index: 5;
+  transition: 1s; }
 
 .call-menu__open {
   visibility: visible; }
