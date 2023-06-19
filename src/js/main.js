@@ -51,26 +51,26 @@ techniqueButton.addEventListener('click', function () {
   }
 })
 
-const popupLeft = document.querySelector('.site-menu__left')
+const popupLeft = document.querySelector('.side-menu__left')
 const openPopupLeftButton = document.querySelector('.header__burger')
-const closePopupLeftButton = document.querySelector('.site-menu__left-cross')
+const closePopupLeftButton = document.querySelector('.side-menu__left-cross')
 const bodyBlur = document.querySelector('.body__blur')
 const body = document.querySelector('body')
 
 openPopupLeftButton.addEventListener('click', function () {
-  popupLeft.classList.add('site-menu__left-open')
+  popupLeft.classList.add('side-menu__left-open')
   bodyBlur.style = 'visibility: visible'
   body.style = 'overflow: hidden'
 })
 
 closePopupLeftButton.addEventListener('click', function () {
-  popupLeft.classList.remove('site-menu__left-open')
+  popupLeft.classList.remove('side-menu__left-open')
   bodyBlur.style = 'visibility: hidden'
   body.style = 'overflow: scroll'
 })
 
 bodyBlur.addEventListener('click', function () {
-  popupLeft.classList.remove('site-menu__left-open')
+  popupLeft.classList.remove('side-menu__left-open')
   bodyBlur.style = 'visibility: hidden'
   body.style = 'overflow: scroll'
 })
@@ -78,7 +78,7 @@ bodyBlur.addEventListener('click', function () {
 const popupCall = document.querySelector('.call-menu')
 const openPopupCall = document.querySelector('.header__phone')
 const closePopupCall = document.querySelector('.call-menu__cross')
-const openPopupCallLeft = document.querySelector('.site-footer__left-phone')
+const openPopupCallLeft = document.querySelector('.side-footer__left-phone')
 
 openPopupCall.addEventListener('click', function () {
   popupCall.classList.add('call-menu__open')
@@ -107,7 +107,7 @@ bodyBlur.addEventListener('click', function () {
 const popupChat = document.querySelector('.feedback-menu')
 const openPopupChat = document.querySelector('.header__chat')
 const closePopupChat = document.querySelector('.feedback-menu__cross')
-const openPopupChatLeft = document.querySelector('.site-footer__left-chat')
+const openPopupChatLeft = document.querySelector('.side-footer__left-chat')
 
 openPopupChat.addEventListener('click', function () {
   popupChat.classList.add('feedback-menu__open')

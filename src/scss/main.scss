@@ -11,11 +11,12 @@
   right: 0;
   bottom: 0;
   visibility: hidden;
-}
-
-.animation {
   transition: 1s;
 }
+
+// .animation {
+//   transition: 1s;
+// }
 
 .animation:hover {
   opacity: 0.6;
@@ -112,6 +113,7 @@
 .main__navigation {
   display: flex;
   overflow: hidden;
+  overflow-x: auto;
   align-items: center;
   padding-left: 16px;
 }
