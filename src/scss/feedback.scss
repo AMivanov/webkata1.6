@@ -6,7 +6,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 5;
+  z-index: 7;
   transition: 0.5s;
 }
 
@@ -76,6 +76,36 @@ aside > span {
   right: 16px;
 }
 
+.modal__area-input {
+  border: 1px solid #b5b6bc;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+
+  &::placeholder {
+    font-family: 'TT Lakes-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #b5b6bc;
+  }
+}
+
+.area-input__size {
+  height: 48px;
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.area-textarea__size {
+  height: 118px;
+  width: 288px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 10px;
+}
+
 @media (min-width: 1440px) {
   .feedback-menu {
     width: 440px;
@@ -85,9 +115,20 @@ aside > span {
     margin-left: 32px;
   }
 
-  .feedback-menu__field {
+  // .feedback-menu__field {
+  //   width: 376px;
+  //   margin: 0 32px 16px 32px;
+  // }
+  .area-input__size {
     width: 376px;
-    margin: 0 32px 16px 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .area-textarea__size {
+    width: 376px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 
   .feedback-menu-content {

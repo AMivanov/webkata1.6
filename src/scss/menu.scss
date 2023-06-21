@@ -116,6 +116,12 @@
   }
 
   .side-menu__left-highlight {
+    top: 90px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .side-menu__left-highlight {
     top: 107px;
   }
 }
