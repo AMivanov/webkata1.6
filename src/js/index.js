@@ -31,3 +31,13 @@ import '../img/sony.svg'
 import '../img/send.svg'
 import '../img/search.svg'
 import '../img/cross.svg'
+
+const str = 'sOme RanDoM sTRING'
+
+function capitalize(str) {
+  let arr = [str.split(' ')]
+
+  console.log(arr)
+}
+
+console.log(capitalize(str)) // Some Random String

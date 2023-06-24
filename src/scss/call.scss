@@ -1,21 +1,37 @@
 .call-menu {
-  visibility: hidden;
+  display: none;
   width: 320px;
   height: 100%;
   background-color: #ffffff;
   position: fixed;
+  overflow-y: auto;
   right: 0;
   top: 0;
   z-index: 7;
   transition: 0.5s;
+  animation-name: call-menu_animation;
+  animation-duration: 1s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+@keyframes call-menu_animation {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .call-menu__open {
-  visibility: visible;
+  display: block;
 }
 
 .call-menu__cross {
   margin: 24px auto 40px 16px;
+  background-image: url('../img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .call-menu-title {
@@ -41,18 +57,33 @@
   margin: 0 16px 18px 16px;
 }
 
-aside > span {
-  color: #ff3e79;
-}
-
-.call-menu__send {
+.call-menu__send-order {
   position: relative;
+  margin-right: 16px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 119px;
   height: 32px;
+  border-radius: 16px;
+  background-color: #ff3e79;
+  justify-content: space-between;
 }
 
-.call-menu__buttom {
-  position: absolute;
-  right: 16px;
+.call-menu__send-text {
+  font-family: 'TT Lakes-Bold', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.call-menu__send-icon {
+  background-image: url('../img/order.svg');
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 7px;
+  margin-right: 15px;
 }
 
 @media (min-width: 1440px) {
@@ -60,7 +91,19 @@ aside > span {
     width: 440px;
   }
 
+  .call-menu__cross {
+    position: absolute;
+    left: -100px;
+    top: 20px;
+  }
+
+  .call-menu__highlight {
+    top: 45px;
+  }
+
   .call-menu-title {
+    margin-left: 32px;
+    margin-top: 50px;
     margin-left: 32px;
   }
 
@@ -72,5 +115,9 @@ aside > span {
 
   .call-menu-content {
     margin: 0 32px 16px 32px;
+  }
+
+  .call-menu__send-order {
+    margin-right: 32px;
   }
 }

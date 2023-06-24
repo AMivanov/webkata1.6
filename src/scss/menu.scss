@@ -1,17 +1,29 @@
 .side-menu__left {
-  visibility: hidden;
+  display: none;
   width: 320px;
   height: 100%;
   background-color: #ffffff;
   z-index: 3;
   position: fixed;
+  overflow-y: auto;
   left: 0;
   top: 0;
-  transition: 0.5s;
+  animation-name: sid;
+  animation-duration: 1s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+@keyframes sid {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .side-menu__left-open {
-  visibility: visible;
+  display: block;
 }
 
 .side-menu__left-header {
@@ -24,11 +36,17 @@
 .side-menu__left-cross {
   margin-left: 24px;
   margin-right: 17px;
+  background-image: url('../img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .side-menu__left-search {
   margin-right: 24px;
   margin-left: auto;
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .list__element:first-child {
@@ -56,18 +74,33 @@
   bottom: 32px;
 }
 
-.side-footer__left-bottoms {
+.side-footer__left-buttoms {
   display: flex;
   margin-bottom: 16px;
 }
+.side-footer__left-phone {
+  margin-left: 24px;
+  background-image: url('../img/phone.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
-.side-footer__left-phone,
-.side-footer__left-chat,
+.side-footer__left-chat {
+  margin-left: 24px;
+  background-image: url('../img/chat.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .side-footer__left-contacts {
   margin-left: 24px;
+  background-image: url('../img/contacts.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .side-footer__left-mail {
+  display: block;
   font-family: 'TT Lakes-Regular', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -75,9 +108,11 @@
   letter-spacing: -0.2px;
   margin-left: 24px;
   margin-bottom: 12px;
+  text-decoration: none;
 }
 
 .side-footer__left-number {
+  display: block;
   font-family: 'TT Lakes-Bold', sans-serif;
   font-size: 24px;
   line-height: 32px;
@@ -85,6 +120,7 @@
   color: #1b1c21;
   margin-left: 24px;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 
 .side-footer__left-language {
@@ -126,18 +162,17 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
   .side-menu__left {
     visibility: visible;
+    display: block;
+    position: static;
+    height: 100%;
+    box-shadow: none;
   }
 
   .list__element:last-child {
     margin-bottom: 241px;
-  }
-
-  body {
-    margin-right: 0;
-    margin-left: auto;
   }
 
   .side-menu__left-header {

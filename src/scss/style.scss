@@ -39,8 +39,12 @@ dd {
   margin: 0;
 }
 body {
-  position: relative;
-  width: 100%;
   max-width: 1440px;
-  overflow-x: hidden;
+  margin: 0 auto;
+  // overflow-x: hidden;
+  background-color: #f8f8f8;
+}
+
+span {
+  color: #ff3e79;
 }
